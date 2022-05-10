@@ -1,0 +1,103 @@
+:root{
+    --sedan-bg: hsl(31, 77%, 52%);
+    --suv-bg: hsl(184, 100%, 22%);
+    --luxury-bg: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.596);
+    --bg-heading-but: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+body{
+    font-size: 1.3em;
+}
+body, button{
+    background-color: var(--bg-heading-but);
+}
+button{
+    border: solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    padding: 1em .5em;
+    max-width: 60%;
+    text-align: center;
+    font-size: .8em;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: solid var(--bg-heading-but);
+    color: black;
+}
+h2{    
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--bg-heading-but);
+}
+img{
+    max-height: 3em;
+    max-width: 3em;
+}
+p{
+    font-size: 0.937em;
+    color: var(--paragraphs);
+}
+section > div{
+    height: 85vh;
+    padding: 2em;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.cars{
+    width: 80%;
+    margin: 5vh auto;
+    border-radius: .5em;
+    overflow: hidden;
+}
+.sedans{
+    background-color: var(--sedan-bg);
+}
+.butSedans{
+    color: var(--sedan-bg)
+}
+.suvs{
+    background-color: var(--suv-bg);
+}
+.butSuvs{
+    color: var(--suv-bg);
+}
+.luxury{
+    background-color: var(--luxury-bg);
+}
+.butLuxury{
+    color: var(--luxury-bg);
+}
+.butSedans:hover, .butSuvs:hover, .butLuxury:hover{
+    color: var(--bg-heading-but);
+}
+
+@media (min-width: 700px){
+    .cars{
+        flex-direction: row;
+        height: 70vh;
+        margin: 15vh auto;
+    }
+    section > div{
+        height: 70vh;
+    }
+    body{
+        font-size: 1.15em;
+    }
+}
+@media (min-width: 1300px){
+    body{
+        font-size: 1.65em;
+    }
+}
