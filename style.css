@@ -61,19 +61,19 @@ section > div{
     border-radius: .5em;
     overflow: hidden;
 }
-.sedans, .sedans img{
+.sedans{
     background-color: var(--sedan-bg);
 }
 .butSedans{
     color: var(--sedan-bg)
 }
-.suvs, .suvs img{
+.suvs{
     background-color: var(--suv-bg);
 }
 .butSuvs{
     color: var(--suv-bg);
 }
-.luxury, .luxury img{
+.luxury{
     background-color: var(--luxury-bg);
 }
 .butLuxury{
