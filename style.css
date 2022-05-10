@@ -61,7 +61,7 @@ section > div{
     border-radius: .5em;
     overflow: hidden;
 }
-.sedans{
+.sedans, .sedans img{
     background-color: var(--sedan-bg);
 }
 .butSedans{
